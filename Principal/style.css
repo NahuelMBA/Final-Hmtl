@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+* {
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+
+
+.videofondo {
+
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+
+}
+
+@media (min-aspect-ratio:16/9) {
+
+
+  .videofondo {
+
+    width: 100%;
+    height: auto;
+
+  }
+
+}
+
+
+
+.container {
+  /*(255, 196, 0)*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: (0, 0, 0, 0.3);
+  color: rgb(255, 0, 0, 0.361);
+
+}
+
+.header {
+
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  margin-top: 2%;
+
+}
+
+
+.menu {
+
+
+  width: 40%;
+  height: 100%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.centro {
+
+  width: 40%;
+  height: 40vh;
+  margin-left: 30%;
+  margin-top: 7%;
+
+}
+
+.centro h1 {
+
+  position: absolute;
+  margin-bottom: 7.5px;
+  margin-top: 10%;
+  font-size: 100px;
+  letter-spacing: 0.5ch;
+  animation: infinite;
+  
+
+}
+
+.centro button {
+  position: absolute;
+  width: 12%;
+  height: 5vh;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  margin-top: 20%;
+  margin-left: 13%;
+  background-color:rgba(255, 0, 0, 0.361);
+  border-radius: 35px;
+  border-color: rgba(249, 249, 249, 0);
+  cursor: pointer;
+  transition: 1s;
+
+}
+
+.centro button:hover {
+
+  background-color: transparent;
+  color: rgb(51, 42, 42);
+
+}
