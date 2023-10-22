@@ -4,9 +4,60 @@
 	box-sizing: border-box;
 }
 
+.carrousel {
+  width: 40%;
+  max-width: 120em;
+  padding: 1px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.carrousel .grande {
+  width: 200%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  padding: 1px;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .img {
+  width: calc( 100% / 2 - 2em);
+  min-height: 10vh;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+
+}
+
+.carrousel .puntos {
+  width:95%;
+  margin: 1em 1px 0;
+  padding: 1px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  transition: all 0.4s ease;
+  border-radius: 0px;
+  background-color: lightblue;
+}
+
+.carrousel .punto.activo {
+  background-color: rgb(0, 0, 0);
+}
+
 body {
 	font-family: 'Ubuntu';
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: 0 auto;
 }
 
@@ -17,16 +68,15 @@ img {
 header {
 	display: flex;
 	align-items: center;
-	padding: 30px;
 	justify-content: center;
 }
 
 .container-title {
 
-	padding: 40px;
+	padding: 32px;
 	background-color: #eee;
 	display: flex;
-	gap: 245px;
+	gap: 276px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #e4e4e4;
 	font-size: 22px;
@@ -52,17 +102,19 @@ header {
     background-color: #000000; 
 }
 
+
 main {
 	display: flex;
 	gap: 30px;
 	margin-bottom: 80px;
 }
 
-.container-img {
-	background-color: #f7f7f9;
-	flex: 1;
+.container-rea{
+
+	background-color: transparent;
 
 }
+
 
 .container-info-product {
 	flex: 1;
@@ -84,7 +136,7 @@ main {
 }
 
 .container-details-product {
-	padding: 30px 0;
+	padding: 10px 0;
 }
 
 .form-group {
@@ -108,6 +160,7 @@ main {
 	outline: none;
 	color: #666;
 }
+
 
 .btn-clean {
 	border: none;
@@ -227,8 +280,8 @@ main {
 .text-reviews {
 	font-size: 13px;
 	color: #252525;
-	line-height: 22px;
-	margin-top: 25px;
+	line-height: 25px;
+	margin-top: 30px;
 }
 
 .container-social {
