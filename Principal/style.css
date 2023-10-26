@@ -31,12 +31,12 @@
 
 
 .container {
-  /*(255, 196, 0)*/
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: (0, 0, 0, 0.3);
-  color: rgb(255, 0, 0, 0.361);
+  background-color: (0, 0, 0, 0.);
+  color: #212F3D;
+  opacity: 15;
 
 }
 
@@ -92,7 +92,7 @@
   color: rgb(255, 255, 255);
   margin-top: 20%;
   margin-left: 13%;
-  background-color:rgba(255, 0, 0, 0.361);
+  background-color:#212F3D;
   border-radius: 35px;
   border-color: rgba(249, 249, 249, 0);
   cursor: pointer;
@@ -102,6 +102,6 @@
 .centro button:hover {
 
   background-color: transparent;
-  color: rgb(51, 42, 42);
+  color: rgb(255, 255, 255);
 
 }
