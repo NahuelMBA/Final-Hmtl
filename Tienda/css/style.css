@@ -33,7 +33,7 @@
 
 .carrousel .puntos {
   width: 95%;
-  margin: 1em 1px 0;
+  margin: 2em 2px 0;
   padding: 1px;
   display: flex;
   flex-flow: row nowrap;
@@ -44,10 +44,11 @@
 .carrousel .punto {
   width: 2em;
   height: 2em;
-  margin: 1em 1em 0;
+  margin: 0.5em 1em 1px;
   transition: all 0.4s ease;
-  border-radius: 0px;
+  border-radius: 50%;
   background-color: lightblue;
+  cursor: pointer;
 }
 
 .carrousel .punto.activo {
@@ -96,7 +97,7 @@ header {
   transition: background-color 0.3s;
 }
 
-.custom-button:hover {
+puntos .custom-button:hover {
   background-color: #000000;
 }
 
@@ -399,4 +400,79 @@ main {
 .footer .row a i {
   font-size: 3em;
   margin: 0% 1%;
+}
+
+#goodboy-formulario {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(to left, #ffffff, #abbaab);
+}
+
+.info-numeros {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.form-info p {
+  text-align: center;
+}
+.form {
+  width: 40%;
+  padding: 30px 0;
+  background: linear-gradient(to left, #ffffff);
+  background: linear-gradient(to right, #abbaab);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 40px;
+}
+
+form input,
+textarea {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+form div {
+  display: flex;
+  gap: 5px;
+}
+
+form span {
+  margin-bottom: -20px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+form button {
+  padding: 20px;
+  border: 2px solid rgb(17, 35, 33);
+  background: none;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+}
+
+.errores {
+  display: flex;
+  justify-content: space-between;
 }

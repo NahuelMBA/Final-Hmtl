@@ -1,209 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Goodboy</title>
-		<link rel="stylesheet" href="style.css">
-        <link rel="icon" href="../Tienda/img/Logo.png">
-		<script defer src="java.js" ></script>
-	</head>
-	<body>
-		<header>
-			<img
-					src="../Tienda/img/1.png"
-					alt="logo-fondo"
-				/>
-		</header>
 
-		<div class="container-title">
-			
-			<a href="../Accesorios/Accesorios.html">
-				<button class="custom-button">Accesorios</button>
-			</a>
-			<a href="../Shorts/Shorts.html">
-				<button class="custom-button">Shorts</button>
-			</a>
-			<a href="../Buzos/Buzos.html">
-				<button class="custom-button">Buzos</button>
-			</a>
-			<a href="../Tienda/Remeras.html">
-				<button class="custom-button">Remeras</button>
-			</a>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Goodboy</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="../Tienda/img/Logo.png">
+	<script defer src="java.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="../Tienda/img/1.png" alt="logo-fondo" />
+	</header>
+
+	<div class="container-title">
+
+		<a href="../Accesorios/Accesorios.html">
+			<button class="custom-button">Accesorios</button>
+		</a>
+		<a href="../Shorts/Shorts.html">
+			<button class="custom-button">Shorts</button>
+		</a>
+		<a href="../Buzos/Buzos.html">
+			<button class="custom-button">Buzos</button>
+		</a>
+		<a href="../Tienda/Remeras.html">
+			<button class="custom-button">Remeras</button>
+		</a>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<main>
+		<div class="carrousel">
+			<div class="grande">
+				<img src="bolso-tussy-1.jpg" alt="Imagen 1" class="img">
+				<img src="bolso-tussy.jpg" alt="Imagen 2" class="img">
+			</div>
+
+			<ul class="puntos">
+				<li class="punto activo"></li>
+				<li class="punto"></li>
+			</ul>
 		</div>
-		
-		<br>
-		<br>
-		<br>
-		<main>
-			<div class="carrousel">
-				<div class="grande">
-					<img src="bolso-tussy-1.jpg" alt="Imagen 1" class="img">
-					<img src="bolso-tussy.jpg" alt="Imagen 2" class="img">
-				</div>
-		
-				<ul class="puntos">
-					<li class="punto activo"></li>
-					<li class="punto"></li>
-				</ul>
+		<div class="container-info-product">
+			<div class="container-price">
+				<span> Bolso Grande <br><br>$20.000</span>
 			</div>
-			<div class="container-info-product">
-				<div class="container-price">
-					<span> Bolso Grande <br><br>$20.000</span>
-				</div>
 
-				<div class="container-details-product">
-					<div class="form-group">
-						<label for="colour">Color</label>
-						<select name="colour" id="colour">
-							<option disabled selected value="">
-								Escoge una opción
-							</option>
-							<option value="rojo">Rojo(No disponible)</option>
-							<option value="blanco">Blanco(No disponible)</option>
-							<option value="blanco">Negro</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label for="size">Talla</label>
-						<select name="size" id="size">
-							<option disabled selected value="">
-								Escoge una opción
-							</option>
-							<option value="40">Chiquito</option>
-							<option value="42">Mediano</option>
-							<option value="43">Grande</option>
-						</select>
-					</div>
+			<div class="container-details-product">
+				<div class="form-group">
+					<label for="colour">Color</label>
+					<select name="colour" id="colour">
+						<option disabled selected value="">
+							Escoge una opción
+						</option>
+						<option value="rojo">Rojo(No disponible)</option>
+						<option value="blanco">Blanco(No disponible)</option>
+						<option value="blanco">Negro</option>
+					</select>
 				</div>
-
-				<div class="container-add-cart">
-					<button class="btn-add-to-cart">
-						<i class="fa-solid fa-plus"></i>
-						Añadir al carrito
-					</button>
-				</div>
-
-				<div class="container-description">
-					<div class="title-description">
-						<h4>Descripción</h4>
-					</div>
-					<div class="text-description">
-						<p>
-							50 cm – Largo<br>
-							25 cm – Ancho<br>
-							28 cm – Alto<br>
-						</p>
-					</div>
-				</div>
+				<div class="form-group">
+					<label for="size">Talla</label>
+					<select name="size" id="size">
+						<option disabled selected value="">
+							Escoge una opción
+						</option>
+						<option value="40">Chiquito</option>
+						<option value="42">Mediano</option>
+						<option value="43">Grande</option>
+					</select>
 				</div>
 			</div>
-		</main>
 
-		<section class="container-related-products">
-			<h2>Accesorios Destacadas</h2>
-			<div class="card-list-products">
-				<div class="card">
-					<div class="card-img">
-						<img
-							src="../Accesorios/BOXER.png"
-							alt="producto-1"
-						/>
-					</div>
-					<div class="info-card">
-						<div class="text-product">
-							<h3>BOXER TUSSY</h3>
-							<p class="category">BOXER TUSSY</p>
-						</div>
-						<div class="price">$5.000</div>
-					</div>
+			<div class="container-add-cart">
+				<button class="btn-add-to-cart">
+					<i class="fa-solid fa-plus"></i>
+					Añadir al carrito
+				</button>
+			</div>
+
+			<div class="container-description">
+				<div class="title-description">
+					<h4>Descripción</h4>
 				</div>
-				<div class="card">
-					<div class="card-img">
-						<img
-							src="../Accesorios/GORRA1.png"
-							alt="producto-2"
-						/>
-					</div>
-					<div class="info-card">
-						<div class="text-product">
-							<h3>GORRA PICH</h3>
-							<p class="category">GORRA PICH</p>
-						</div>
-						<div class="price">$9.000</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-img">
-						<img
-							src="../Accesorios/PERFUMINA.png"
-							alt="producto-3"
-						/>
-					</div>
-					<div class="info-card">
-						<div class="text-product">
-							<h3>PERFUMINA MILOXXX</h3>
-							<p class="category">PERFUMINA MILOXXX</p>
-						</div>
-						<div class="price">$4.000</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-img">
-						<img
-							src="../Accesorios/A1AA.png"
-							alt="producto-4"
-						/>
-					</div>
-					<div class="info-card">
-						<div class="text-product">
-							<h3>MEDIAS CLEAN</h3>
-							<p class="category">MEDIAS CLEAN</p>
-						</div>
-						<div class="price">$3.500</div>
-					</div>
+				<div class="text-description">
+					<p>
+						50 cm – Largo<br>
+						25 cm – Ancho<br>
+						28 cm – Alto<br>
+					</p>
 				</div>
 			</div>
-			<br>
-			<br>
-		</section>
-		<footer class="footer">
-			<div class="footer-container">
-				<div class="footer-logo">
-					<img src="../Tienda/img/Logo.png" alt="GoodBoy Logo">
+		</div>
+		</div>
+	</main>
+
+	<section class="container-related-products">
+		<h2>Accesorios Destacadas</h2>
+		<div class="card-list-products">
+			<div class="card">
+				<div class="card-img">
+					<img src="../Accesorios/BOXER.png" alt="producto-1" />
 				</div>
-				<div class="footer-info">
-					<div class="contact-info">
-						<h3>Contacto</h3>
-						<p>Teléfono: (123) 456-7890</p><br><br>
-						<p>Correo Electrónico: info@goodboy.com</p><br><br>
-						<p>Dirección: 123 Calle Principal, San Luis</p><br><br>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>BOXER TUSSY</h3>
+						<p class="category">BOXER TUSSY</p>
 					</div>
+					<div class="price">$5.000</div>
 				</div>
-				<div class="footer-nav">
-					<h3>Enlaces</h3>
+			</div>
+			<div class="card">
+				<div class="card-img">
+					<img src="../Accesorios/GORRA1.png" alt="producto-2" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>GORRA PICH</h3>
+						<p class="category">GORRA PICH</p>
+					</div>
+					<div class="price">$9.000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img">
+					<img src="../Accesorios/PERFUMINA.png" alt="producto-3" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>PERFUMINA MILOXXX</h3>
+						<p class="category">PERFUMINA MILOXXX</p>
+					</div>
+					<div class="price">$4.000</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img">
+					<img src="../Accesorios/A1AA.png" alt="producto-4" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>MEDIAS CLEAN</h3>
+						<p class="category">MEDIAS CLEAN</p>
+					</div>
+					<div class="price">$3.500</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+	</section>
+	<section id="goodboy-formulario">
+		<div class="form-info">
+			<p>DEJANOS TU MENSAJE<br>
+				<br>Whatsapp: (+54) 11 7369-5533
+			</p><br>
+			<p>Enseguida te estaremos respondiendo!</p><br>
+			<p>Nuestro horario de atención es de lunes a viernes de 9 a 18 horas.</p><br>
+			<p>Whatsapp: (+54) 11 7369-5533</p><br>
+		</div>
+		<div class="form">
+			<form id="formulario" onsubmit="return validar()">
+				<span class="span_nombre">Nombre y Apellido</span>
+				<input id="form_nombre" type="text" placeholder="Ingrese su nombre y apellido *">
+
+				<span class="span_email">Gmail (Tiene que incluir @)</span>
+				<input id="form_email" type="text" placeholder="Ingresar su Gmail *">
+
+				<span class="span_txt">Máximo 500 caracteres</span>
+				<textarea id="form_txt" cols="30" rows="10"
+					placeholder="Escribinos tu duda o consulta que tengas *"></textarea>
+
+				<div class="btns">
+					<button class="btnEnviar" type="submit">Enviar</button>
+					<button class="btnReset" type="reset">Limpiar</button>
+				</div>
+
+				<div class="errores"></div>
+			</form>
+		</div>
+	</section>
+	</main>
+
+
+	</section>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<footer>
+			<div class="footer">
+				<div class="row">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+				</div>
+
+				<div class="row">
 					<ul>
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Productos</a></li>
-						<li><a href="#">Acerca de Goodboy</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contáctanos</a></li>
+						<li><a href="#">Contactanos</a></li>
+						<li><a href="#">Nuestros Servicios</a></li>
+						<li><a href="#">Política de Privacidad</a></li>
+						<li><a href="#">Terminos y Condiciones</a></li>
 					</ul>
 				</div>
-			</div>
-			<div class="footer-copyright">
-				<p>&copy; 2023 GoodBoy. Todos los derechos reservados.</p>
+
+				<div class="row">
+					GoodBoy Copyright © 2021 - Todos los derechos reservados || Diseñado por: Mahesh
+				</div>
 			</div>
 		</footer>
-
-		<script
-			src="https://kit.fontawesome.com/81581fb069.js"
-			crossorigin="anonymous"
-		></script>
 		<script src="index.js"></script>
 	</body>
+
 </html>

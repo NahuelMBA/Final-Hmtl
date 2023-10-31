@@ -1,208 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Goodboy</title>
-		<link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="../Tienda/img/Logo.png">
-		<script defer src="js/java.js" ></script>
-	</head>
-	<body>
-		<header>
-			<img
-					src="../Tienda/img/1.png"
-					alt="logo-fondo"
-				/>
-		</header>
 
-		<div class="container-title">
-			
-			<a href="../Accesorios/Accesorios.html">
-				<button class="custom-button">Accesorios</button>
-			</a>
-			<a href="../Shorts/Shorts.html">
-				<button class="custom-button">Shorts</button>
-			</a>
-			<a href="../Buzos/Buzos.html">
-				<button class="custom-button">Buzos</button>
-			</a>
-			<a href="../Tienda/Remeras.html">
-				<button class="custom-button">Remeras</button>
-			</a>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Goodboy</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="../Tienda/img/Logo.png">
+	<script defer src="js/java.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="../Tienda/img/1.png" alt="logo-fondo" />
+	</header>
+
+	<div class="container-title">
+
+		<a href="../Accesorios/Accesorios.html">
+			<button class="custom-button">Accesorios</button>
+		</a>
+		<a href="../Shorts/Shorts.html">
+			<button class="custom-button">Shorts</button>
+		</a>
+		<a href="../Buzos/Buzos.html">
+			<button class="custom-button">Buzos</button>
+		</a>
+		<a href="../Tienda/Remeras.html">
+			<button class="custom-button">Remeras</button>
+		</a>
+	</div>
+	<br>
+	<br>
+	<main>
+		<div class="carrousel">
+			<div class="grande">
+				<img src="img/destacado2.jpg" alt="Imagen 1" class="img">
+				<img src="img/REMERA-88B.png" alt="Imagen 2" class="img">
+			</div>
+
+			<ul class="puntos">
+				<li class="punto activo"></li>
+				<li class="punto"></li>
+			</ul>
+		</div>
+		<div class="container-info-product">
+
+			<div class="container-price">
+				<span> REMERA OVERSIZE SOFF <br><br>$17.500</span>
+			</div>
+
+			<div class="container-details-product">
+				<div class="form-group">
+					<label for="colour">Color</label>
+					<select name="colour" id="colour">
+						<option disabled selected value="">
+							Escoge una opción
+						</option>
+						<option value="rojo">Rojo</option>
+						<option value="blanco">Blanco</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="size">Talla</label>
+					<select name="size" id="size">
+						<option disabled selected value="">
+							Escoge una opción
+						</option>
+						<option value="40">S</option>
+						<option value="42">L</option>
+						<option value="43">XL</option>
+						<option value="44">XXL</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="container-add-cart">
+				<button class="btn-add-to-cart">
+					<i class="fa-solid fa-plus"></i>
+					Añadir al carrito
+				</button>
+			</div>
+
+			<div class="container-description">
+				<div class="title-description">
+					<h4>Descripción</h4>
+					<i class="fa-solid fa-chevron-down"></i>
+				</div>
+				<div class="text-description">
+					<p>
+						Algodon 20.1 Peinado (Maxima calidad y dureza)<br>
+						Tapa Costura (Todas las costuras reforzadas)<br>
+						No Destiñe<br>
+						Maxima calidad de estampados.
+					</p>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+	</main>
+
+	<section class="container-related-products">
+		<h2>Remeras Destacadas</h2>
+		<div class="card-list-products">
+			<div class="card">
+				<div class="card-img">
+					<img src="../Tienda/img/destacado1.jpg" alt="producto-1" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>REMERA OVERSIZE ARC</h3>
+						<p class="category">OVERSIZE, T-shirt</p>
+					</div>
+					<div class="price">$19.250</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img">
+					<img src="../Tienda/img/destacado2.jpg" alt="producto-2" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>REMERA OVERSIZE HUSS</h3>
+						<p class="category">OVERSIZE, T-shirt</p>
+					</div>
+					<div class="price">$17.800</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img">
+					<img src="../Tienda/img/destacado3.jpg" alt="producto-3" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>REMERA OVERSIZE BILLI</h3>
+						<p class="category">OVERSIZE, T-shirt</p>
+					</div>
+					<div class="price">$12.500</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img">
+					<img src="../Tienda/img/destacado4.jpg" alt="producto-4" />
+				</div>
+				<div class="info-card">
+					<div class="text-product">
+						<h3>REMERA CLOUD</h3>
+						<p class="category">OVERSIZE, T-shirt</p>
+					</div>
+					<div class="price">$12.500</div>
+				</div>
+			</div>
 		</div>
 		<br>
 		<br>
-		<main>
-			<div class="carrousel">
-				<div class="grande">
-					<img src="img/destacado2.jpg" alt="Imagen 1" class="img">
-					<img src="img/REMERA-88B.png" alt="Imagen 2" class="img">
-				</div>
-		
-				<ul class="puntos">
-					<li class="punto activo"></li>
-					<li class="punto"></li>
-				</ul>
+		<section id="goodboy-formulario">
+			<div class="form-info">
+				<p>DEJANOS TU MENSAJE<br>
+					<br>Whatsapp: (+54) 11 7369-5533
+				</p><br>
+				<p>Enseguida te estaremos respondiendo!</p><br>
+				<p>Nuestro horario de atención es de lunes a viernes de 9 a 18 horas.</p><br>
+				<p>Whatsapp: (+54) 11 7369-5533</p><br>
 			</div>
-			<div class="container-info-product">
+			<div class="form">
+				<form id="formulario" onsubmit="return validar()">
+					<span class="span_nombre">Nombre y Apellido</span>
+					<input id="form_nombre" type="text" placeholder="Ingrese su nombre y apellido *">
 
-				<div class="container-price">
-					<span> REMERA OVERSIZE SOFF <br><br>$17.500</span>
-				</div>
+					<span class="span_email">Gmail (Tiene que incluir @)</span>
+					<input id="form_email" type="text" placeholder="Ingresar su Gmail *">
 
-				<div class="container-details-product">
-					<div class="form-group">
-						<label for="colour">Color</label>
-						<select name="colour" id="colour">
-							<option disabled selected value="">
-								Escoge una opción
-							</option>
-							<option value="rojo">Rojo</option>
-							<option value="blanco">Blanco</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label for="size">Talla</label>
-						<select name="size" id="size">
-							<option disabled selected value="">
-								Escoge una opción
-							</option>
-							<option value="40">S</option>
-							<option value="42">L</option>
-							<option value="43">XL</option>
-							<option value="44">XXL</option>
-						</select>
-					</div>
-				</div>
+					<span class="span_txt">Máximo 500 caracteres</span>
+					<textarea id="form_txt" cols="30" rows="10"
+						placeholder="Escribinos tu duda o consulta que tengas *"></textarea>
 
-				<div class="container-add-cart">
-					<button class="btn-add-to-cart">
-						<i class="fa-solid fa-plus"></i>
-						Añadir al carrito
-					</button>
-				</div>
+					<div class="btns">
+						<button class="btnEnviar" type="submit">Enviar</button>
+						<button class="btnReset" type="reset">Limpiar</button>
+					</div>
 
-				<div class="container-description">
-					<div class="title-description">
-						<h4>Descripción</h4>
-						<i class="fa-solid fa-chevron-down"></i>
-					</div>
-					<div class="text-description">
-						<p>
-							Algodon 20.1 Peinado (Maxima calidad y dureza)<br>
-							Tapa Costura (Todas las costuras reforzadas)<br>
-							No Destiñe<br>
-							Maxima calidad de estampados.
-						</p>
-					</div>
-				</div>
-				</div>
-				</div>
+					<div class="errores"></div>
+				</form>
 			</div>
+		</section>
 		</main>
 
-		<section class="container-related-products">
-			<h2>Remeras Destacadas</h2>
-			<div class="card-list-products">
-				<div class="card">
-					<div class="card-img">
-						<img
-							src="../Tienda/img/destacado1.jpg"
-							alt="producto-1"
-						/>
-					</div>
-					<div class="info-card">
-						<div class="text-product">
-							<h3>REMERA OVERSIZE ARC</h3>
-							<p class="category">OVERSIZE, T-shirt</p>
-						</div>
-						<div class="price">$19.250</div>
-					</div>
+
+	</section>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<footer>
+			<div class="footer">
+				<div class="row">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
 				</div>
-				<div class="card">
-					<div class="card-img">
-						<img
-							src="../Tienda/img/destacado2.jpg"
-							alt="producto-2"
-						/>
-					</div>
-					<div class="info-card">
-						<div class="text-product">
-							<h3>REMERA OVERSIZE HUSS</h3>
-							<p class="category">OVERSIZE, T-shirt</p>
-						</div>
-						<div class="price">$17.800</div>
-					</div>
+
+				<div class="row">
+					<ul>
+						<li><a href="#">Contactanos</a></li>
+						<li><a href="#">Nuestros Servicios</a></li>
+						<li><a href="#">Política de Privacidad</a></li>
+						<li><a href="#">Terminos y Condiciones</a></li>
+					</ul>
 				</div>
-				<div class="card">
-					<div class="card-img">
-						<img
-							src="../Tienda/img/destacado3.jpg"
-							alt="producto-3"
-						/>
-					</div>
-					<div class="info-card">
-						<div class="text-product">
-							<h3>REMERA OVERSIZE BILLI</h3>
-							<p class="category">OVERSIZE, T-shirt</p>
-						</div>
-						<div class="price">$12.500</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-img">
-						<img
-							src="../Tienda/img/destacado4.jpg"
-							alt="producto-4"
-						/>
-					</div>
-					<div class="info-card">
-						<div class="text-product">
-							<h3>REMERA CLOUD</h3>
-							<p class="category">OVERSIZE, T-shirt</p>
-						</div>
-						<div class="price">$12.500</div>
-					</div>
+
+				<div class="row">
+					GoodBoy Copyright © 2021 - Todos los derechos reservados || Diseñado por: Mahesh
 				</div>
 			</div>
-			<br>
-			<br>
-		</section>
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!--GOOGLE FONTS-->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
-	</head>
-	<body>
-	<footer>
-	<div class="footer">
-	<div class="row">
-	<a href="#"><i class="fa fa-facebook"></i></a>
-	<a href="#"><i class="fa fa-instagram"></i></a>
-	<a href="#"><i class="fa fa-youtube"></i></a>
-	<a href="#"><i class="fa fa-twitter"></i></a>
-	</div>
-
-	<div class="row">
-	<ul>
-	<li><a href="#">Contactanos</a></li>
-	<li><a href="#">Nuestros Servicios</a></li>
-	<li><a href="#">Política de Privacidad</a></li>
-	<li><a href="#">Terminos y Condiciones</a></li>
-	</ul>
-	</div>
-
-	<div class="row">
-	GoodBoy Copyright © 2021 - Todos los derechos reservados || Diseñado por: Mahesh
-	</div>
-	</div>
-	</footer>
+		</footer>
 		<script src="index.js"></script>
 	</body>
+
 </html>
