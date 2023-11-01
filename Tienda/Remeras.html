@@ -8,7 +8,6 @@
 	<title>Goodboy</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="../Tienda/img/Logo.png">
-	<script defer src="js/java.js"></script>
 </head>
 
 <body>
@@ -33,18 +32,14 @@
 	</div>
 	<br>
 	<br>
+	<br>
 	<main>
-		<div class="carrousel">
-			<div class="grande">
-				<img src="img/destacado2.jpg" alt="Imagen 1" class="img">
-				<img src="img/REMERA-88B.png" alt="Imagen 2" class="img">
-			</div>
+		<section id="carrousel">
+			<button class="btnIzq">
+				< </button>
+					<button class="btnDer">></button>
+		</section>
 
-			<ul class="puntos">
-				<li class="punto activo"></li>
-				<li class="punto"></li>
-			</ul>
-		</div>
 		<div class="container-info-product">
 
 			<div class="container-price">
@@ -156,7 +151,7 @@
 		</div>
 		<br>
 		<br>
-		<section id="goodboy-formulario">
+		<section id="form">
 			<div class="form-info">
 				<p>DEJANOS TU MENSAJE<br>
 					<br>Whatsapp: (+54) 11 7369-5533
@@ -167,22 +162,23 @@
 			</div>
 			<div class="form">
 				<form id="formulario" onsubmit="return validar()">
-					<span class="span_nombre">Nombre y Apellido</span>
-					<input id="form_nombre" type="text" placeholder="Ingrese su nombre y apellido *">
+					<span class="span_nombre">Max. 30 caracteres</span>
+					<input id="form_nombre" type="text" placeholder="Tu nombre *">
 
-					<span class="span_email">Gmail (Tiene que incluir @)</span>
-					<input id="form_email" type="text" placeholder="Ingresar su Gmail *">
+					<span class="span_email">Debe incluir @ y 3 letras despues del punto</span>
+					<input id="form_email" type="text" placeholder="Tu email *">
 
-					<span class="span_txt">Máximo 500 caracteres</span>
-					<textarea id="form_txt" cols="30" rows="10"
-						placeholder="Escribinos tu duda o consulta que tengas *"></textarea>
+					<span class="span_txt">Max. 500 caracteres</span>
+					<textarea id="form_txt" cols="30" rows="10" placeholder="Tu duda o consulta *"></textarea>
 
 					<div class="btns">
 						<button class="btnEnviar" type="submit">Enviar</button>
 						<button class="btnReset" type="reset">Limpiar</button>
 					</div>
 
-					<div class="errores"></div>
+					<div class="errores">
+
+					</div>
 				</form>
 			</div>
 		</section>
@@ -220,7 +216,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="index.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 
 </html>

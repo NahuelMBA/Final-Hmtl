@@ -6,9 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Goodboy</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../Accesorios/css/style.css">
 	<link rel="icon" href="../Tienda/img/Logo.png">
-	<script defer src="java.js"></script>
 </head>
 
 <body>
@@ -36,17 +35,11 @@
 	<br>
 	<br>
 	<main>
-		<div class="carrousel">
-			<div class="grande">
-				<img src="bolso-tussy-1.jpg" alt="Imagen 1" class="img">
-				<img src="bolso-tussy.jpg" alt="Imagen 2" class="img">
-			</div>
-
-			<ul class="puntos">
-				<li class="punto activo"></li>
-				<li class="punto"></li>
-			</ul>
-		</div>
+		<section id="carrousel">
+			<button class="btnIzq">
+				< </button>
+					<button class="btnDer">></button>
+		</section>
 		<div class="container-info-product">
 			<div class="container-price">
 				<span> Bolso Grande <br><br>$20.000</span>
@@ -105,7 +98,7 @@
 		<div class="card-list-products">
 			<div class="card">
 				<div class="card-img">
-					<img src="../Accesorios/BOXER.png" alt="producto-1" />
+					<img src="../Accesorios/img/BOXER.png" alt="producto-1" />
 				</div>
 				<div class="info-card">
 					<div class="text-product">
@@ -117,7 +110,7 @@
 			</div>
 			<div class="card">
 				<div class="card-img">
-					<img src="../Accesorios/GORRA1.png" alt="producto-2" />
+					<img src="../Accesorios/img/GORRA1.png" alt="producto-2" />
 				</div>
 				<div class="info-card">
 					<div class="text-product">
@@ -129,7 +122,7 @@
 			</div>
 			<div class="card">
 				<div class="card-img">
-					<img src="../Accesorios/PERFUMINA.png" alt="producto-3" />
+					<img src="../Accesorios/img/PERFUMINA.png" alt="producto-3" />
 				</div>
 				<div class="info-card">
 					<div class="text-product">
@@ -141,7 +134,7 @@
 			</div>
 			<div class="card">
 				<div class="card-img">
-					<img src="../Accesorios/A1AA.png" alt="producto-4" />
+					<img src="../Accesorios/img/A1AA.png" alt="producto-4" />
 				</div>
 				<div class="info-card">
 					<div class="text-product">
@@ -155,7 +148,7 @@
 		<br>
 		<br>
 	</section>
-	<section id="goodboy-formulario">
+	<section id="form">
 		<div class="form-info">
 			<p>DEJANOS TU MENSAJE<br>
 				<br>Whatsapp: (+54) 11 7369-5533
@@ -166,22 +159,23 @@
 		</div>
 		<div class="form">
 			<form id="formulario" onsubmit="return validar()">
-				<span class="span_nombre">Nombre y Apellido</span>
-				<input id="form_nombre" type="text" placeholder="Ingrese su nombre y apellido *">
+				<span class="span_nombre">Max. 30 caracteres</span>
+				<input id="form_nombre" type="text" placeholder="Tu nombre *">
 
-				<span class="span_email">Gmail (Tiene que incluir @)</span>
-				<input id="form_email" type="text" placeholder="Ingresar su Gmail *">
+				<span class="span_email">Debe incluir @ y 3 letras despues del punto</span>
+				<input id="form_email" type="text" placeholder="Tu email *">
 
-				<span class="span_txt">Máximo 500 caracteres</span>
-				<textarea id="form_txt" cols="30" rows="10"
-					placeholder="Escribinos tu duda o consulta que tengas *"></textarea>
+				<span class="span_txt">Max. 500 caracteres</span>
+				<textarea id="form_txt" cols="30" rows="10" placeholder="Tu duda o consulta *"></textarea>
 
 				<div class="btns">
 					<button class="btnEnviar" type="submit">Enviar</button>
 					<button class="btnReset" type="reset">Limpiar</button>
 				</div>
 
-				<div class="errores"></div>
+				<div class="errores">
+
+				</div>
 			</form>
 		</div>
 	</section>
@@ -219,7 +213,7 @@
 				</div>
 			</div>
 		</footer>
-		<script src="index.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 
 </html>

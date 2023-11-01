@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Goodboy</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="../Tienda/img/Logo.png" />
 </head>
 
@@ -30,21 +30,17 @@
     </a>
   </div>
 
-  <br />
-  <br />
-  <br />
+  <br>
+  <br>
+  <br>
   <main>
-    <div class="carrousel">
-      <div class="grande">
-        <img src="BUZO1.png" alt="Imagen 1" class="img" />
-        <img src="BUZO-89C-300x300.png" alt="Imagen 2" class="img" />
-      </div>
 
-      <ul class="puntos">
-        <li class="punto activo"></li>
-        <li class="punto"></li>
-      </ul>
-    </div>
+    <section id="carrousel">
+      <button class="btnIzq">
+        < </button>
+          <button class="btnDer">></button>
+    </section>
+
     <div class="container-info-product">
       <div class="container-price">
         <span> BUZO OVERSIZE STAY <br /><br />$34.500</span>
@@ -85,7 +81,7 @@
     <div class="card-list-products">
       <div class="card">
         <div class="card-img">
-          <img src="../Buzos/Buzo2.png" alt="producto-1" />
+          <img src="../Buzos/img/Buzo2.png" alt="producto-1" />
         </div>
         <div class="info-card">
           <div class="text-product">
@@ -97,7 +93,7 @@
       </div>
       <div class="card">
         <div class="card-img">
-          <img src="../Buzos/BUZO6.png" alt="producto-2" />
+          <img src="../Buzos/img/BUZO6.png" alt="producto-2" />
         </div>
         <div class="info-card">
           <div class="text-product">
@@ -109,7 +105,7 @@
       </div>
       <div class="card">
         <div class="card-img">
-          <img src="../Buzos/BUZO3.jpg" alt="producto-3" />
+          <img src="../Buzos/img/BUZO3.jpg" alt="producto-3" />
         </div>
         <div class="info-card">
           <div class="text-product">
@@ -121,7 +117,7 @@
       </div>
       <div class="card">
         <div class="card-img">
-          <img src="../Buzos/BUZO5.png" alt="producto-4" />
+          <img src="../Buzos/img/BUZO5.png" alt="producto-4" />
         </div>
         <div class="info-card">
           <div class="text-product">
@@ -135,7 +131,7 @@
     <br />
     <br />
   </section>
-  <section id="goodboy-formulario">
+  <section id="form">
     <div class="form-info">
       <p>DEJANOS TU MENSAJE<br>
         <br>Whatsapp: (+54) 11 7369-5533
@@ -146,21 +142,23 @@
     </div>
     <div class="form">
       <form id="formulario" onsubmit="return validar()">
-        <span class="span_nombre">Nombre y Apellido</span>
-        <input id="form_nombre" type="text" placeholder="Ingrese su nombre y apellido *">
+        <span class="span_nombre">Max. 30 caracteres</span>
+        <input id="form_nombre" type="text" placeholder="Tu nombre *">
 
-        <span class="span_email">Gmail (Tiene que incluir @)</span>
-        <input id="form_email" type="text" placeholder="Ingresar su Gmail *">
+        <span class="span_email">Debe incluir @ y 3 letras despues del punto</span>
+        <input id="form_email" type="text" placeholder="Tu email *">
 
-        <span class="span_txt">Máximo 500 caracteres</span>
-        <textarea id="form_txt" cols="30" rows="10" placeholder="Escribinos tu duda o consulta que tengas *"></textarea>
+        <span class="span_txt">Max. 500 caracteres</span>
+        <textarea id="form_txt" cols="30" rows="10" placeholder="Tu duda o consulta *"></textarea>
 
         <div class="btns">
           <button class="btnEnviar" type="submit">Enviar</button>
           <button class="btnReset" type="reset">Limpiar</button>
         </div>
 
-        <div class="errores"></div>
+        <div class="errores">
+
+        </div>
       </form>
     </div>
   </section>
@@ -198,7 +196,7 @@
         </div>
       </div>
     </footer>
-    <script src="java.js"></script>
+    <script src="js/main.js"></script>
   </body>
 
 </html>

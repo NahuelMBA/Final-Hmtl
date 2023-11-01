@@ -1,23 +1,36 @@
+let index = 0;
+const portadas = ['./img/bolso-tussy.jpg', './img/bolso-tussy-1.jpg'];
+const fondo = document.querySelector("#carrousel");
+const botonIzq = document.querySelector(".btnIzq");
+const botonDer = document.querySelector(".btnDer");
 
-const grande    = document.querySelector('.grande')
-const punto     = document.querySelectorAll('.punto')
+botonIzq.addEventListener("click", () => {
+    if (index == 0) {
+        index = portadas.length-1;
+    } else {
+        index--;
+    }
 
-punto.forEach( ( cadaPunto , i )=> {
-    punto[i].addEventListener('click',()=>{
+    let portadaActual = portadas[index];
 
-        let posicion  = i
-        let operacion = posicion * -50
+    fondo.style.backgroundImage = "url('" + portadaActual + "')";
+    fondo.style.backgroundSize = "cover";
+});
 
-        grande.style.transform = `translateX(${ operacion }%)`
+botonDer.addEventListener("click", () => {
+    if (index == portadas.length-1) {
+        index = 0;
+    } else {
+        index++;
+    }
+
+    let portadaActual = portadas[index];
+
+    fondo.style.backgroundImage = "url('" + portadaActual + "')";
+    fondo.style.backgroundSize = "cover";
+});
 
 
-        punto.forEach( ( cadaPunto , i )=>{
-            punto[i].classList.remove('activo')
-        })
-        punto[i].classList.add('activo')
-
-    })
-})
 
 const btnEnviar = document.querySelector(".btnEnviar");
 const btnLimpiar = document.querySelector(".btnReset");

@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Goodboy</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="../Tienda/img/Logo.png">
 </head>
 
@@ -30,21 +30,17 @@
 			<button class="custom-button">Remeras</button>
 		</a>
 	</div>
-
 	<br>
 	<br>
 	<br>
 	<main>
-		<div class="carrousel">
-			<div class="grande">
-				<img src="Short1.png" alt="Imagen 1" class="img">
-				<img src="Short1.png" alt="Imagen 2" class="img">
-			</div>
-			<ul class="puntos">
-				<li class="punto activo"></li>
-				<li class="punto"></li>
-			</ul>
-		</div>
+
+		<section id="carrousel">
+			<button class="btnIzq">
+				< </button>
+					<button class="btnDer">></button>
+		</section>
+
 		<div class="container-info-product">
 			<div class="container-price">
 				<span> BERMUDA CARGO CLARK <br><br>$20.500</span>
@@ -88,7 +84,7 @@
 		<div class="card-list-products">
 			<div class="card">
 				<div class="card-img">
-					<img src="../Shorts/Short2.png" alt="producto-1" />
+					<img src="../Shorts/img/Short1.png" alt="producto-1" />
 				</div>
 				<div class="info-card">
 					<div class="text-product">
@@ -100,7 +96,7 @@
 			</div>
 			<div class="card">
 				<div class="card-img">
-					<img src="../Shorts/Short3.png" alt="producto-2" />
+					<img src="../Shorts/img/Short3.png" alt="producto-2" />
 				</div>
 				<div class="info-card">
 					<div class="text-product">
@@ -112,7 +108,7 @@
 			</div>
 			<div class="card">
 				<div class="card-img">
-					<img src="../Shorts/Short4.png" alt="producto-3" />
+					<img src="../Shorts/img/Short4.png" alt="producto-3" />
 				</div>
 				<div class="info-card">
 					<div class="text-product">
@@ -124,7 +120,7 @@
 			</div>
 			<div class="card">
 				<div class="card-img">
-					<img src="../Shorts/Short5.png" alt="producto-4" />
+					<img src="../Shorts/img/Short5.png" alt="producto-4" />
 				</div>
 				<div class="info-card">
 					<div class="text-product">
@@ -137,7 +133,7 @@
 		</div>
 		<br>
 		<br>
-		<section id="goodboy-formulario">
+		<section id="form">
 			<div class="form-info">
 				<p>DEJANOS TU MENSAJE<br>
 					<br>Whatsapp: (+54) 11 7369-5533
@@ -148,57 +144,61 @@
 			</div>
 			<div class="form">
 				<form id="formulario" onsubmit="return validar()">
-					<span class="span_nombre">Nombre y Apellido</span>
-					<input id="form_nombre" type="text" placeholder="Ingrese su nombre y apellido *">
+					<span class="span_nombre">Max. 30 caracteres</span>
+					<input id="form_nombre" type="text" placeholder="Tu nombre *">
 
-					<span class="span_email">Gmail (Tiene que incluir @)</span>
-					<input id="form_email" type="text" placeholder="Ingresar su Gmail *">
+					<span class="span_email">Debe incluir @ y 3 letras despues del punto</span>
+					<input id="form_email" type="text" placeholder="Tu email *">
 
-					<span class="span_txt">Máximo 500 caracteres</span>
-					<textarea id="form_txt" cols="30" rows="10"
-						placeholder="Escribinos tu duda o consulta que tengas *"></textarea>
+					<span class="span_txt">Max. 500 caracteres</span>
+					<textarea id="form_txt" cols="30" rows="10" placeholder="Tu duda o consulta *"></textarea>
 
 					<div class="btns">
 						<button class="btnEnviar" type="submit">Enviar</button>
 						<button class="btnReset" type="reset">Limpiar</button>
 					</div>
 
-					<div class="errores"></div>
+					<div class="errores">
+
+					</div>
 				</form>
 			</div>
 		</section>
+		</main>
 
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-		</head>
 
-		<body>
-			<footer>
-				<div class="footer">
-					<div class="row">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-youtube"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-					</div>
+	</section>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-					<div class="row">
-						<ul>
-							<li><a href="#">Contactanos</a></li>
-							<li><a href="#">Nuestros Servicios</a></li>
-							<li><a href="#">Política de Privacidad</a></li>
-							<li><a href="#">Terminos y Condiciones</a></li>
-						</ul>
-					</div>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+	</head>
 
-					<div class="row">
-						GoodBoy Copyright © 2021 - Todos los derechos reservados || Diseñado por: Mahesh
-					</div>
+	<body>
+		<footer>
+			<div class="footer">
+				<div class="row">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
 				</div>
-			</footer>
-			<script src="java.js"></script>
-		</body>
+
+				<div class="row">
+					<ul>
+						<li><a href="#">Contactanos</a></li>
+						<li><a href="#">Nuestros Servicios</a></li>
+						<li><a href="#">Política de Privacidad</a></li>
+						<li><a href="#">Terminos y Condiciones</a></li>
+					</ul>
+				</div>
+
+				<div class="row">
+					GoodBoy Copyright © 2021 - Todos los derechos reservados || Diseñado por: Mahesh
+				</div>
+			</div>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
 
 </html>

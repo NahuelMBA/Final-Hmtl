@@ -4,54 +4,30 @@
   box-sizing: border-box;
 }
 
-.carrousel {
-  width: 40%;
-  max-width: 120em;
-  padding: 1px;
-  transition: all 0.4s ease;
-  overflow: hidden;
-}
-
-.carrousel .grande {
-  width: 200%;
+#carrousel {
+  background-image: url(../img/Short1.png);
+  height: 550px;
+  width: 550px;
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.4s ease;
-  border-radius: 1em;
-  padding: 1px;
-  transition: all 0.5s ease;
-  transform: translateX(0%);
 }
 
-.carrousel .img {
-  width: calc(100% / 2 - 2em);
-  min-height: 10vh;
-  transition: all 0.4s ease;
-  border-radius: 1em;
+#carrousel button {
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 0 25px;
+  padding: 2px 12px;
+  transition: transform 250ms;
 }
 
-.carrousel .puntos {
-  width: 95%;
-  margin: 1em 1px 0;
-  padding: 1px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.carrousel .punto {
-  width: 2em;
-  height: 2em;
-  margin: 1em 1em 0;
-  transition: all 0.4s ease;
-  border-radius: 0px;
-  background-color: lightblue;
-}
-
-.carrousel .punto.activo {
-  background-color: rgb(0, 0, 0);
+#carrousel button:hover {
+  transform: scale(1.3);
 }
 
 body {
@@ -96,7 +72,7 @@ header {
   transition: background-color 0.3s;
 }
 
-.custom-button:hover {
+puntos .custom-button:hover {
   background-color: #000000;
 }
 
@@ -165,6 +141,9 @@ main {
 
 .btn-clean:hover {
   color: #1bbeb4;
+}
+
+container-info-product {
 }
 
 .container-add-cart {
@@ -401,7 +380,7 @@ main {
   margin: 0% 1%;
 }
 
-#goodboy-formulario {
+#form {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
